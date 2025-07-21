@@ -4,7 +4,7 @@ A Flutter app for managing employees, tasks, and attendance, supporting persiste
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Add, update, and view employee tasks
 - Set task name, due date, priority, and status
@@ -22,11 +22,9 @@ A Flutter app for managing employees, tasks, and attendance, supporting persiste
 - **[shared_preferences](https://pub.dev/packages/shared_preferences):** For local data persistence, so tasks and attendance are saved across app restarts.
 - **[google_fonts](https://pub.dev/packages/google_fonts):** For custom fonts and improved UI appearance.
 
-
 **Why these packages?**
 - `shared_preferences` is lightweight and perfect for simple key-value storage.
 - `google_fonts` makes it easy to use beautiful, readable fonts.
-
 
 ---
 
@@ -41,20 +39,20 @@ A Flutter app for managing employees, tasks, and attendance, supporting persiste
 
 ---
 
-### Running on Android
+###  Running on Android
 
 1. **Connect your Android device** or start an emulator.
 2. **In your project directory, run:**
-   
+   ```sh
    flutter pub get
    flutter run
-   
+   ```
    This will launch the app on your connected device or emulator.
 
 3. **To build an APK:**
-   
+   ```sh
    flutter build apk
-   
+   ```
    The APK will be at `build/app/outputs/flutter-apk/app-release.apk`.
 
 ---
@@ -63,21 +61,19 @@ A Flutter app for managing employees, tasks, and attendance, supporting persiste
 
 1. **Make sure you have Chrome installed.**
 2. **In your project directory, run:**
-   
+   ```sh
    flutter pub get
    flutter run -d chrome
-   
+   ```
    This will launch the app in your default browser.
 
 3. **To build for deployment:**
-   
+   ```sh
    flutter build web
-   
+   ```
    The web build will be in `build/web/`.
 
 ---
-
-
 
 ##  Project Structure
 
@@ -91,27 +87,27 @@ lib/
   models/
     task.dart
     employee.dart
+```
 
+---
 
-##  Bonus Features..
-    Refresh Feature
-    The Refresh button in both the Attendance and Tasks screens allows users to reload the latest data from persistent storage (SharedPreferences).
+##  Bonus Features
 
-    
-    Attendance History
-    The Attendance History section displays a list of incomplete attendance records of employees
+### Refresh Feature
+The **Refresh** button in both the Attendance and Tasks screens allows users to reload the latest data from persistent storage (`SharedPreferences`). This ensures that the displayed information is always up-to-date.
 
-    
-    Tasks History
-    The Tasks History section (in your task management screen) lists all tasks that have been added:
-    Each task displays its name, due date, priority, and status.
+### Attendance History
+The **Attendance History** section displays a list of all attendance records for employees, including incomplete records. The history is persisted using `SharedPreferences`, so records remain available even after restarting the app.
+
+### Tasks History
+The **Tasks History** section lists all tasks that have been added. Each task displays its name, due date, priority, and status. Tasks are also saved using `SharedPreferences`, ensuring persistence across app restarts.
+
+---
 
 ##  Development Time
 
-This app was developed in **1 day**.
-    
-    
+This app was developed in **one and half day**.
 
+---
 
-
-**Made with Flutter **
+**Made with Flutter ❤️**
